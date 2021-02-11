@@ -20,20 +20,20 @@ However, it is more flexible in Keras. Some of the FastAI object is just a Pytor
 # Note on Data Pipline in Tensorflow-Keras 2.x
 3 Different Approaches:
 1. Build a data pipeline via numpy or tf.tensor. 
-  - Using CV2 or PIL library to store the data into numpy, called it X.
-  - Build a label in array, called it y
-  - Fit the model via `model.fit(X,y)` command.
-  - Pro: Easy to understand / Straigth forward / good for small dataset
-  - Con: Use a lot of mememory (data is stored in the memory) 
+    - Using CV2 or PIL library to store the data into numpy, called it X.
+    - Build a label in array, called it y
+    - Fit the model via `model.fit(X,y)` command.
+    - Pro: Easy to understand / Straigth forward / good for small dataset
+    - Con: Use a lot of mememory (data is stored in the memory) 
 
 2. Using data generator class from `tf.keras.utils.Sequence`
-  - Build a generator class that will store the data batch by batch. 
-  - Built-in data augmentation fuctnion and can be use with albumentations and nlpaug library.
+    - Build a generator class that will store the data batch by batch. 
+    - Built-in data augmentation fuctnion and can be use with albumentations and nlpaug library.
 
 3. Using `tf.data.dataset` 
-  - Load the data, data augmentation
-  - Faster than other 2 methods because it has been carefully optimized. 
-  - Example: [Kaggle: RFCX: train resnet50 with TPU](https://www.kaggle.com/yosshi999/rfcx-train-resnet50-with-tpu?fbclid=IwAR2DGIoJE0V0vG7oCOXXQwmFqG7ykcjzp4TKLBTLv2D7dbWFVyN8OwyfR98)
+    - Load the data, data augmentation
+    - Faster than other 2 methods because it has been carefully optimized. 
+    - Example: [Kaggle: RFCX: train resnet50 with TPU](https://www.kaggle.com/yosshi999/rfcx-train-resnet50-with-tpu?fbclid=IwAR2DGIoJE0V0vG7oCOXXQwmFqG7ykcjzp4TKLBTLv2D7dbWFVyN8OwyfR98)
 
 
 # Pre-trained Model
