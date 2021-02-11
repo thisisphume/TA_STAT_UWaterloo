@@ -2,7 +2,7 @@
 The machine learning-based model must detect whether the subject of study has been infected or not.
 
 # Data 
-This dataset consists of 15264 (512x512) chest X-ray images for the train set and 400 images for the test set. The dataset contains positive and negative classes to indicate the positive and negative COVID-19 cases. You can find some examples of this dataset below:
+This dataset consists of 15264 (512x512) chest X-ray images for the train set and 400 images for the test set. The dataset contains positive and negative classes to indicate the positive and negative COVID-19 cases. The dataset can be downloaded from the class's respository. 
 
 # Approach
 Developed the classification model using transfer learning & fine-tuning techniques via two different framework, **FastAI** and **Keras**.
